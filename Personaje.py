@@ -19,7 +19,10 @@ class Personaje:
     def recargarArma(self,municiones):
         cargador=10
         cargador+=municiones
-        print("El arma tiene "+str(cargador)+" balas")    
+        print("El arma tiene "+str(cargador)+" balas") 
+        
+    def __pensar(self):
+        print("Estoy pensando...\nI'm thinking")       
         
     #Declaramos los metodos SETTER y GETTER
     def getNombre(self):

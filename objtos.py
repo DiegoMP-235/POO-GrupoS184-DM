@@ -17,6 +17,8 @@ RecargaV = int(input("Ingresa las balas que quieres recargar al villano\n->"))
 myHeroe = Personaje(EspecieH,NameH,AlturaH)
 myVillano = Personaje(EspecieV,NameV,AlturaV)
 
+#Hacemos uso de metodo SET
+myHeroe.setNombre("Alvaro")
 #3.-Usar atributos
 print("######## Stats heroe #########")
 print("El personaje se llama "+myHeroe.getNombre())
@@ -26,6 +28,9 @@ print("El personaje tiene altura de "+str(myHeroe.getAltura()))
 myHeroe.correr(True)
 myHeroe.lanzarGranada()
 myHeroe.recargarArma(RecargaH)
+#Ejemplo metodo privado
+#myHeroe.pensar()
+
 
 print("######## Stats villano #########")
 print("El personaje se llama "+myVillano.getNombre())
