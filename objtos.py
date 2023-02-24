@@ -19,18 +19,18 @@ myVillano = Personaje(EspecieV,NameV,AlturaV)
 
 #3.-Usar atributos
 print("######## Stats heroe #########")
-print("El personaje se llama "+myHeroe.nombre)
-print("El personaje tiene la especie "+myHeroe.especie)
-print("El personaje tiene altura de "+str(myHeroe.altura))
+print("El personaje se llama "+myHeroe.getNombre())
+print("El personaje tiene la especie "+myHeroe.getEspecie())
+print("El personaje tiene altura de "+str(myHeroe.getAltura()))
 
 myHeroe.correr(True)
 myHeroe.lanzarGranada()
 myHeroe.recargarArma(RecargaH)
 
 print("######## Stats villano #########")
-print("El personaje se llama "+myVillano.nombre)
-print("El personaje tiene la especie "+myVillano.especie)
-print("El personaje tiene altura de "+str(myVillano.altura))
+print("El personaje se llama "+myVillano.getNombre())
+print("El personaje tiene la especie "+myVillano.getEspecie())
+print("El personaje tiene altura de "+str(myVillano.getAltura()))
 
 myVillano.correr(False)
 myVillano.lanzarGranada()
