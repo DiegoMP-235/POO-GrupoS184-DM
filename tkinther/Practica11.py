@@ -1,4 +1,7 @@
-from tkinter import Tk,Button,Frame
+from tkinter import Tk,Button,Frame,messagebox
+#creamos funciones para probar el command
+def muestraMensaje():
+    messagebox.showinfo("Aviso!","Haz presionado el boton")
 
 #1.Instanciamos un objeto de tipo "ventana"
 ventana = Tk()
@@ -15,8 +18,9 @@ seccion3 = Frame(ventana,bg="#0000FF")
 seccion3.pack(expand=True,fill='both')
 
 #3.Agregamos botones
-boton1 = Button(seccion1,text="Soy un boton azul",fg="blue",font="bold")
+boton1 = Button(seccion1,text="Soy un boton azul",fg="blue",font="bold",command=muestraMensaje)
 boton1.place(x = 60,y = 60)
+
 
 boton2 = Button(seccion2,text="Soy un boton amarillo",bg="#f6ff08",fg="#000000")
 boton2.grid(row = 1,column = 1)
